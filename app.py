@@ -22,7 +22,7 @@ def callback():
     decoded = json.loads(json_line)
     decoded['originalDetectIntentRequest']['payload']['data']['replyToken']
     userText = decodeddecoded['queryResult']['intent']['displayName']
-    If (userText == 'สวัสดี') :
+    if (userText == 'สวัสดี') :
         sendText(user,'เออ! ดี')
     elif (userText == 'ไป ล่ะ') :
         sendText(user,'เออ! บาย')
